@@ -75,10 +75,12 @@ def main():
 
     st.sidebar.title('Navigation')
     page = st.sidebar.selectbox("Select a page:", list(pages.keys()))
-    if page in ["Home Page", "Document Upload"]:
+    if page in ["Home Page"]:
         pages[page]()  
     else:
         pages[page]()
 
 if __name__ == "_main_":
     main()
+else: 
+    print("Error: Start.py is not the main file. Please run Start.py to start the app.")
