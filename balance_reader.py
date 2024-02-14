@@ -5,6 +5,7 @@ import pandas as pd
 from io import StringIO
 from openai import OpenAI
 
+
 #API key
 client = OpenAI(api_key="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")
 

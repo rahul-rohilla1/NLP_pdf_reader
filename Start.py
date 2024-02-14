@@ -7,6 +7,8 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 import balance_reader as br
+import os 
+import get_file_path_in_downloads as gfp
 
 
 st.set_page_config(layout="wide")
@@ -57,8 +59,10 @@ def doc_upload():
             "FileType": uploaded_file.type,
             "FileSize": uploaded_file.size
         }
-        st.write(file_details)
-        df=br.find_variables(uploaded_file)
+        full_file_path = gfp(uploaded_file.name)
+
+
+        df=br.find_variables(full_file_path)
         st.write(df)
         
     else:
