@@ -80,7 +80,4 @@ def main():
     else:
         pages[page]()
 
-if __name__ == "_main_":
-    main()
-else: 
-    print("Error: Start.py is not the main file. Please run Start.py to start the app.")
+main()
