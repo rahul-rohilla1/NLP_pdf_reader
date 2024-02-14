@@ -78,7 +78,7 @@ def main():
     if page in ["Home Page", "Document Upload"]:
         pages[page]()  
     else:
-        pages[page](data)
+        pages[page]()
 
 if __name__ == "_main_":
     main()
