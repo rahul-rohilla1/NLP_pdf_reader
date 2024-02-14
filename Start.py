@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
-import balance_reader as br
+#import balance_reader as br
 
 
 st.set_page_config(layout="wide")
@@ -80,4 +80,7 @@ def main():
     else:
         pages[page]()
 
-main()
+if __name__ == "__main__":
+    main()
+else: 
+    print("Error: Start.py is not the main file. Please run Start.py to start the app.")
