@@ -6,6 +6,8 @@ from plotly.subplots import make_subplots
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
+import balance_reader as br
+
 
 st.set_page_config(layout="wide")
 
