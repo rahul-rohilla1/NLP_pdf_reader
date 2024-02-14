@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
-#import balance_reader as br
+import balance_reader as br
 
 
 st.set_page_config(layout="wide")
@@ -58,7 +58,8 @@ def doc_upload():
             "FileSize": uploaded_file.size
         }
         st.write(file_details)
-        # Proceed with further processing of the uploaded file here
+        df=br.find_variables(uploaded_file)
+        st.write(df)
         
     else:
         # No file has been uploaded yet
