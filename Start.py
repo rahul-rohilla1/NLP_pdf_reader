@@ -52,32 +52,56 @@ FinInsights transforms complex company filings into actionable financial insight
     st.write("hi")
     
 def doc_upload():
-    uploaded_file = st.file_uploader("Choose a file", type=['pdf'])
+    col1, col2 = st.columns(2)
 
-    if uploaded_file is not None:
-        # File has been uploaded, you can now access its details
-        file_details = {
-            "FileName": uploaded_file.name,
-            "FileType": uploaded_file.type,
-            "FileSize": uploaded_file.size
-        }
-        
-        temp_file = tempfile.NamedTemporaryFile(delete=False)
-        temp_file.write(uploaded_file.getvalue())
-        temp_file.close()
+    with col1:
+        uploaded_file_1 = st.file_uploader("Financial Document 1", type=['pdf'])
 
-        with st.spinner('Be patient, we are analyzing the document...'):
-            merged_df=fr.ratios(temp_file.name)
-            st.write(merged_df)
-            #time.sleep(5)
-        st.success('Done!')
-  
+        if uploaded_file_1 is not None:
+            # File has been uploaded, you can now access its details
+            file_details = {
+                "FileName": uploaded_file_1.name,
+                "FileType": uploaded_file_1.type,
+                "FileSize": uploaded_file_1.size
+            }
+            
+            temp_file_1 = tempfile.NamedTemporaryFile(delete=False)
+            temp_file_1.write(uploaded_file_1.getvalue())
+            temp_file_1.close()
+
         
-    else:
-        # No file has been uploaded yet
-        st.write("Please upload a file to get started.")
+        else:
+            # No file has been uploaded yet
+            st.write("Please upload a file to get started.")
+     
+    with col2:
+        uploaded_file_2 = st.file_uploader("Financial Document 2", type=['pdf'])
+
+        if uploaded_file_2 is not None:
+            # File has been uploaded, you can now access its details
+            file_details = {
+                "FileName": uploaded_file_2.name,
+                "FileType": uploaded_file_2.type,
+                "FileSize": uploaded_file_2.size
+            }
+            
+            temp_file_2 = tempfile.NamedTemporaryFile(delete=False)
+            temp_file_2.write(uploaded_file_2.getvalue())
+            temp_file_2.close()
+        else:
+            # No file has been uploaded yet
+            st.write("Please upload a file to get started.")
     
-    
+    with st.spinner('Be patient, we are analyzing the documents ...'):
+        merged_df_1=fr.ratios(temp_file_2.name)
+        merged_df_2=fr.ratios(temp_file_1.name)
+        
+        st.write(merged_df_1)
+        st.write(merged_df_2)
+
+    st.success('Done!')
+        
+      
     
 def main():
     # Load data
