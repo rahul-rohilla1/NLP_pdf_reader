@@ -61,7 +61,7 @@ def doc_upload():
     with col2:
         uploaded_file_2 = st.file_uploader("Financial Document 2", type=['pdf'])
 
-    if uploaded_file_2 is not None & uploaded_file_1 is not None:
+    if uploaded_file_2 is not None and uploaded_file_1 is not None:
         file_details_1 = {
                 "FileName": uploaded_file_1.name,
                 "FileType": uploaded_file_1.type,
