@@ -87,7 +87,7 @@ def main():
         "Home Page": home_page,
         "Document Upload": doc_upload
     }
-    st.sidebar.image("pics/logo.jpg", use_column_width=True)
+    st.sidebar.image("pics/logo.jpeg", use_column_width=True)
     st.sidebar.title('Navigation')
     page = st.sidebar.selectbox("Select a page:", list(pages.keys()))
     if page in ["Home Page"]:
