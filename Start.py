@@ -9,6 +9,9 @@ import seaborn as sns
 import balance_reader as br
 import os 
 import get_file_path_in_downloads as gfp
+import tempfile
+import os
+import PyPDF2
 
 
 st.set_page_config(layout="wide")
@@ -60,7 +63,9 @@ def doc_upload():
             "FileSize": uploaded_file.size
         }
         full_file_path = gfp(uploaded_file.name)
-
+        temp_file = tempfile.NamedTemporaryFile(delete=False)
+        temp_file.write(uploaded_file.getvalue())
+        temp_file.close()
 
         df=br.find_variables(full_file_path)
         st.write(df)
