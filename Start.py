@@ -7,11 +7,10 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 import balance_reader as br
-import os 
 import get_file_path_in_downloads as gfp
 import tempfile
 import os
-import PyPDF2
+
 
 
 st.set_page_config(layout="wide")
