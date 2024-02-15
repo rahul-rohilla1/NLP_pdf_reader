@@ -52,9 +52,10 @@ FinInsights transforms complex company filings into actionable financial insight
     st.write("hi")
     
 def doc_upload():
-    col1, col2 = st.columns(2)
     st.header('Compare 2 companies', divider='rainbow')
     st.write("To get started upload 2 Balance Sheet file")
+    
+    col1, col2 = st.columns(2)
     with col1:
         uploaded_file_1 = st.file_uploader("Financial Document 1", type=['pdf'])
 
