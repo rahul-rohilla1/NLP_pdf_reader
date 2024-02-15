@@ -10,7 +10,7 @@ import balance_reader as br
 import get_file_path_in_downloads as gfp
 import tempfile
 import os
-
+import time
 
 
 st.set_page_config(layout="wide")
@@ -67,7 +67,13 @@ def doc_upload():
         temp_file.close()
 
         df=br.find_variables(temp_file.name)
-        st.write(df)
+        
+        with st.spinner('Be patient, we are analyzing the document...'):
+            df=br.find_variables(temp_file.name)
+            st.write(df)
+            #time.sleep(5)
+        st.success('Done!')
+  
         
     else:
         # No file has been uploaded yet
@@ -81,7 +87,7 @@ def main():
         "Home Page": home_page,
         "Document Upload": doc_upload
     }
-
+    st.sidebar.image("pics/logo.jpg", use_column_width=True)
     st.sidebar.title('Navigation')
     page = st.sidebar.selectbox("Select a page:", list(pages.keys()))
     if page in ["Home Page"]:
