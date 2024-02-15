@@ -57,49 +57,40 @@ def doc_upload():
     with col1:
         uploaded_file_1 = st.file_uploader("Financial Document 1", type=['pdf'])
 
-        if uploaded_file_1 is not None:
-            # File has been uploaded, you can now access its details
-            file_details = {
-                "FileName": uploaded_file_1.name,
-                "FileType": uploaded_file_1.type,
-                "FileSize": uploaded_file_1.size
-            }
-            
-            temp_file_1 = tempfile.NamedTemporaryFile(delete=False)
-            temp_file_1.write(uploaded_file_1.getvalue())
-            temp_file_1.close()
-
-        
-        else:
-            # No file has been uploaded yet
-            st.write("Please upload a file to get started.")
      
     with col2:
         uploaded_file_2 = st.file_uploader("Financial Document 2", type=['pdf'])
 
-        if uploaded_file_2 is not None:
-            # File has been uploaded, you can now access its details
-            file_details = {
+    if uploaded_file_2 is not None & uploaded_file_1 is not None:
+        file_details_1 = {
+                "FileName": uploaded_file_1.name,
+                "FileType": uploaded_file_1.type,
+                "FileSize": uploaded_file_1.size
+            }    
+        temp_file_1 = tempfile.NamedTemporaryFile(delete=False)
+        temp_file_1.write(uploaded_file_1.getvalue())
+        temp_file_1.close()
+
+        file_details_2 = {
                 "FileName": uploaded_file_2.name,
                 "FileType": uploaded_file_2.type,
                 "FileSize": uploaded_file_2.size
             }
             
-            temp_file_2 = tempfile.NamedTemporaryFile(delete=False)
-            temp_file_2.write(uploaded_file_2.getvalue())
-            temp_file_2.close()
-        else:
-            # No file has been uploaded yet
-            st.write("Please upload a file to get started.")
-    
-    with st.spinner('Be patient, we are analyzing the documents ...'):
-        merged_df_1=fr.ratios(temp_file_2.name)
-        merged_df_2=fr.ratios(temp_file_1.name)
-        
-        st.write(merged_df_1)
-        st.write(merged_df_2)
+        temp_file_2 = tempfile.NamedTemporaryFile(delete=False)
+        temp_file_2.write(uploaded_file_2.getvalue())
+        temp_file_2.close()
+        with st.spinner('Be patient, we are analyzing the documents ...'):
+            merged_df_1=fr.ratios(temp_file_2.name)
+            merged_df_2=fr.ratios(temp_file_1.name)
+            
+            st.write(merged_df_1)
+            st.write(merged_df_2)
 
-    st.success('Done!')
+        st.success('Done!')
+    else:
+        st.write("Please upload 2 financial Balance Sheet file to get started.")
+    
         
       
     
