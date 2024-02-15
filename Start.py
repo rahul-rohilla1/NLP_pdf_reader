@@ -61,12 +61,12 @@ def doc_upload():
             "FileType": uploaded_file.type,
             "FileSize": uploaded_file.size
         }
-        full_file_path = gfp(uploaded_file.name)
+        
         temp_file = tempfile.NamedTemporaryFile(delete=False)
         temp_file.write(uploaded_file.getvalue())
         temp_file.close()
 
-        df=br.find_variables(full_file_path)
+        df=br.find_variables(temp_file.name)
         st.write(df)
         
     else:
