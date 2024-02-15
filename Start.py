@@ -53,7 +53,8 @@ FinInsights transforms complex company filings into actionable financial insight
     
 def doc_upload():
     col1, col2 = st.columns(2)
-
+    st.header('Compare 2 companies', divider='rainbow')
+    st.write("To get started upload 2 Balance Sheet file")
     with col1:
         uploaded_file_1 = st.file_uploader("Financial Document 1", type=['pdf'])
 
@@ -88,8 +89,7 @@ def doc_upload():
             st.write(merged_df_2)
 
         st.success('Done!')
-    else:
-        st.write("Please upload 2 financial Balance Sheet file to get started.")
+    
     
         
       
