@@ -5,7 +5,7 @@ import seaborn as sns
 import os
 import balance_reader as br
 
-def financial_ratios(path):
+def ratios(path):
 
     # Load data
     df_1 = br.find_variables(path)

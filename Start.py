@@ -66,7 +66,7 @@ def doc_upload():
         temp_file.close()
 
         with st.spinner('Be patient, we are analyzing the document...'):
-            merged_df=fr(temp_file.name)
+            merged_df=fr.ratios(temp_file.name)
             st.write(merged_df)
             #time.sleep(5)
         st.success('Done!')
