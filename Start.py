@@ -11,7 +11,7 @@ import get_file_path_in_downloads as gfp
 import tempfile
 import os
 import time
-
+import financial_ratios as fr
 
 st.set_page_config(layout="wide")
 
@@ -66,11 +66,9 @@ def doc_upload():
         temp_file.write(uploaded_file.getvalue())
         temp_file.close()
 
-        df=br.find_variables(temp_file.name)
-        
         with st.spinner('Be patient, we are analyzing the document...'):
-            df=br.find_variables(temp_file.name)
-            st.write(df)
+            merged_df=fr(temp_file.name)
+            st.write(merged_df)
             #time.sleep(5)
         st.success('Done!')
   

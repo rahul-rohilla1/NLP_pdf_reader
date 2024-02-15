@@ -1,0 +1,82 @@
+﻿S_liquidity,S_Leverage_Ratio,S_ROE,S_Net Revenue Percentage Delta,Coments
+Red,Red,Red,Red,"Maximum warning! If these numbers are real, your company is in serious trouble. You need to take action immediately."
+Red,Red,Red,Yellow,"Alert! You have too much money from the banks. If you don't start investing it, you'll encounter problems."
+Red,Red,Red,Green,"Maximum warning! If these numbers are real, your company is in serious trouble. You need to take action immediately."
+Red,Red,Yellow,Red,"Maximum warning! If these numbers are real, your company is in serious trouble. You need to take action immediately."
+Red,Red,Yellow,Yellow,"Maximum warning! If these numbers are real, your company is in serious trouble. You need to take action immediately."
+Red,Red,Yellow,Green,"Maximum warning! If these numbers are real, your company is in serious trouble. You need to take action immediately."
+Red,Red,Green,Red,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Red,Green,Yellow,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Red,Green,Green,You need money now. Let's strategize to improve liquidity. 
+Red,Yellow,Red,Red,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Yellow,Red,Yellow,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Yellow,Red,Green,You need money now. Let's strategize to improve liquidity.
+Red,Yellow,Yellow,Red,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Yellow,Yellow,Yellow,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Yellow,Yellow,Green,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Yellow,Green,Red,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Yellow,Green,Yellow,You need money now. Let's strategize to improve liquidity. 
+Red,Yellow,Green,Green,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Green,Red,Red,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Green,Red,Yellow,You need money now. Let's strategize to improve liquidity. 
+Red,Green,Red,Green,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Green,Yellow,Red,You need money now. Let's strategize to improve liquidity. You have room for a new loan.
+Red,Green,Yellow,Yellow,"Warning! You can afford your short-term responsibilities, but you need a significant change to meet your long-term obligations."
+Red,Green,Yellow,Green,"Warning! While you can handle your short-term responsibilities, a significant change is needed to meet your long-term obligations. Consider taking on debt as an option."
+Red,Green,Green,Red,"Warning! Even though you're on a good path and can afford your short-term responsibilities, a significant change is needed to meet your long-term obligations."
+Red,Green,Green,Yellow,"Warning! While you can handle your short-term responsibilities, a significant change is needed to meet your long-term obligations. Consider taking on debt as an option."
+Red,Green,Green,Green,"Warning! While you can handle your short-term responsibilities, a significant change is needed to meet your long-term obligations. Consider taking on debt as an option."
+Yellow,Red,Red,Red,"Warning! While you can afford your short-term responsibilities and your profit is growing, it's essential to start earning more to meet your long-term obligations."
+Yellow,Red,Red,Yellow,"Warning! While you can afford your short-term responsibilities and your profit is growing, it's essential to start earning more to meet your long-term obligations."
+Yellow,Red,Red,Green,Your company is on an acceptable path; it's just time to start earning more money.
+Yellow,Red,Yellow,Red,Your company is on an acceptable path; it's just time to start earning more money.
+Yellow,Red,Yellow,Yellow,"Your company is in an acceptable position, but keep an eye on your high debt and why your profit is decreasing."
+Yellow,Red,Yellow,Green,"Your company is in an acceptable position, but why your profit is decreasing?"
+Yellow,Red,Green,Red,"Your company is in an acceptable position, but why your profit is decreasing?"
+Yellow,Red,Green,Yellow,Good job! Try to use your liquidity surplus to pay off your long-term debts.
+Yellow,Red,Green,Green,"Well done! Everything looks fine, just remember there's always room for improvement."
+Yellow,Yellow,Red,Red,"Well done! Everything looks fine, just remember there's always room for improvement."
+Yellow,Yellow,Red,Yellow,Good job! Try to use your liquidity surplus to pay off your long-term debts.
+Yellow,Yellow,Red,Green,"Well done! Everything looks fine, just remember there's always room for improvement."
+Yellow,Yellow,Yellow,Red,Fantastic! Your company is soaring. Keep up the great work!
+Yellow,Yellow,Yellow,Yellow,Youre profit is amazing. Now it's time to better organize your company.
+Yellow,Yellow,Yellow,Green,"Well done! Everything looks fine, just remember there's always room for improvement."
+Yellow,Yellow,Green,Red,"Well done! Everything looks fine, just remember there's always room for improvement."
+Yellow,Yellow,Green,Yellow,Good job! Try to use your liquidity surplus to pay off your long-term debts.
+Yellow,Yellow,Green,Green,"Well done! Everything looks fine, just remember there's always room for improvement."
+Yellow,Green,Red,Red,Fantastic! Your company is soaring. Keep up the great work!
+Yellow,Green,Red,Yellow,Good job! Try to use your liquidity surplus to pay off your long-term debts.
+Yellow,Green,Red,Green,Fantastic! Your company is soaring. Keep up the great work!
+Yellow,Green,Yellow,Red,Fantastic! Your company is soaring. Keep up the great work!
+Yellow,Green,Yellow,Yellow,"Warning! While you can handle your short-term responsibilities, a significant change is needed to meet your long-term obligations. Consider taking on debt as an option."
+Yellow,Green,Yellow,Green,"Warning! While you can handle your short-term responsibilities, a significant change is needed to meet your long-term obligations. Consider taking on debt as an option."
+Yellow,Green,Green,Red,"Warning! Even though you're on a good path and can afford your short-term responsibilities, a significant change is needed to meet your long-term obligations."
+Yellow,Green,Green,Yellow,Your company is on an acceptable path; it's just time to start earning more money.
+Yellow,Green,Green,Green,Your company is on an acceptable path; it's just time to start earning more money.
+Green,Red,Red,Red,"Warning! Even though you're on a good path and can afford your short-term responsibilities, a significant change is needed to meet your long-term obligations."
+Green,Red,Red,Yellow,Your company is on an acceptable path; it's just time to start earning more money.
+Green,Red,Red,Green,Your company is on an acceptable path; it's just time to start earning more money.
+Green,Red,Yellow,Red,Your company is doing alright! Consider using your liquidity surplus to pay off your long-term debts.
+Green,Red,Yellow,Yellow,"Well done! Everything looks fine, just remember there's always room for improvement."
+Green,Red,Yellow,Green,"Well done! Everything looks fine, just remember there's always room for improvement."
+Green,Red,Green,Red,Your company is doing alright! Consider using your liquidity surplus to pay off your long-term debts.
+Green,Red,Green,Yellow,"Well done! Everything looks fine, just remember there's always room for improvement."
+Green,Red,Green,Green,Fantastic! Your company is soaring. Keep up the great work!
+Green,Yellow,Red,Red,Your company is doing alright! Consider using your liquidity surplus to pay off your long-term debts.
+Green,Yellow,Red,Yellow,Fantastic! Your company is soaring. Keep up the great work!
+Green,Yellow,Red,Green,Fantastic! Your company is soaring. Keep up the great work!
+Green,Yellow,Yellow,Red,Your company is doing alright! Consider using your liquidity surplus to pay off your long-term debts.
+Green,Yellow,Yellow,Yellow,"Well done! Everything looks fine, just remember there's always room for improvement."
+Green,Yellow,Yellow,Green,"Well done! Everything looks fine, just remember there's always room for improvement."
+Green,Yellow,Green,Red,Your company is doing alright! Consider using your liquidity surplus to pay off your long-term debts.
+Green,Yellow,Green,Yellow,Fantastic! Your company is soaring. Keep up the great work!
+Green,Yellow,Green,Green,Fantastic! Your company is soaring. Keep up the great work!
+Green,Green,Red,Red,Your company is doing alright! Consider using your liquidity surplus to pay off your long-term debts.
+Green,Green,Red,Yellow,Fantastic! Your company is soaring. Keep up the great work!
+Green,Green,Red,Green,Amazing job! You're rocking it! Keep up the great work!
+Green,Green,Yellow,Red,Amazing job! You're rocking it! Keep up the great work!
+Green,Green,Yellow,Yellow,Amazing job! You're rocking it! Keep up the great work!
+Green,Green,Yellow,Green,Amazing job! You're rocking it! Keep up the great work!
+Green,Green,Green,Red,Amazing job! You're rocking it! Keep up the great work!
+Green,Green,Green,Yellow,Amazing job! You're rocking it! Keep up the great work!
+Green,Green,Green,Green,Amazing job! You're rocking it! Keep up the great work!

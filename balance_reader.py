@@ -7,7 +7,7 @@ from openai import OpenAI
 
 
 #API key
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=st.secrets["openai_key"])
 
 #Configure the prompt from OpenAI
 def get_response(prompt):
