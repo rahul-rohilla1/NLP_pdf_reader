@@ -49,6 +49,7 @@ FinInsights transforms complex company filings into actionable financial insight
     <b>Start Making Informed Investment Decisions Today!</b>
 </div>
 """, unsafe_allow_html=True)
+    st.write("hi")
     
 def doc_upload():
     uploaded_file = st.file_uploader("Choose a file", type=['pdf'])
